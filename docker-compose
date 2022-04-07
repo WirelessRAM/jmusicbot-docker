@@ -1,0 +1,10 @@
+---
+version: "3"
+services:
+  JMusicBot:
+     network_mode: bridge
+     image: jbot:latest
+     container_name: jmusicbot
+     volumes:
+     - /opt/jmusicbot:/opt/jmusicbot #Config Directory
+     restart: unless-stopped
