@@ -5,4 +5,4 @@ docker_build:
   services:
     - docker:dind
   script:
-    - docker build -t example.com/example-image:latest .
+    - docker build -t wirelessram/jbot:latest .
