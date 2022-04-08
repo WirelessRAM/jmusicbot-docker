@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-COPY JMusicBot-0.3.8.jar /jmusicbot.jar
+RUN wget -O /jmusicbot.jar https://github.com/jagrosh/MusicBot/releases/download/0.3.8/JMusicBot-0.3.8.jar
 COPY config.txt /config.txt
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
