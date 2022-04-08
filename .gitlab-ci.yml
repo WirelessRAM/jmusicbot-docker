@@ -1,4 +1,4 @@
-#image: docker:dind
+image: docker:20.10.14-dind
 #
 #before_script:
 #  - docker info
@@ -31,7 +31,7 @@ variables:
   DOCKER_TLS_CERTDIR: ""
 
 services:
-  - docker:dind
+  - docker:20.10.14-dind
 
 before_script:
   - docker info
