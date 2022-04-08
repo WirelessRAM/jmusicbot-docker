@@ -1,5 +1,8 @@
 image: docker:dind
 
+before_script:
+  - docker info
+
 docker_build:
   stage: build
   services:
